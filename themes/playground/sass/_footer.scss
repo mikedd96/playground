@@ -1,0 +1,41 @@
+footer {
+    height: 500px;
+    background-image: url("../images/JmHzY1U.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.call {
+    color: #043B78;
+    font-family: 'Rise-of-Kingdom';
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 2rem;
+    left: 40px;
+    position: relative;
+}
+.fab, .fas {
+    font-size: 50px;
+    color: #034476;
+    grid-column-start: 3;
+}
+.location {
+    color: #4C4E50;
+    grid-column-start: 3;
+}
+.text-links {
+    color: #4C4E50;
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    a, p {
+        margin: 20px;
+        margin-left: 45px;
+    }
+}
+.send-email {
+    grid-column-start: 2;
+    color: #4C4E50;
+}

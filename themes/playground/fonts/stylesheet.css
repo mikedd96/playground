@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Rise of Kingdom';
+    src: url('RiseofKingdom.eot');
+    src: url('RiseofKingdom.eot?#iefix') format('embedded-opentype'),
+        url('RiseofKingdom.woff2') format('woff2'),
+        url('RiseofKingdom.woff') format('woff'),
+        url('RiseofKingdom.ttf') format('truetype'),
+        url('RiseofKingdom.svg#RiseofKingdom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
