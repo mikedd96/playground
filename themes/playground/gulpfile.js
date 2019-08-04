@@ -61,6 +61,10 @@ gulp.task('browser-sync', function() {
     './**/*.css',
     './js/*.js',
     './*.php',
+    './**/*.php',
+    './*.scss',
+    './**/*.scss',
+    './sass',
     './**/*.php'
   ];
 
@@ -72,7 +76,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./js/*.js', gulp.series('scripts'));
+  gulp.watch('js/*.js', gulp.series('scripts'));
   gulp.watch('./sass/*.scss', gulp.series('sass'));
 });
 

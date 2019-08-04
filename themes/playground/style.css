@@ -56,6 +56,21 @@ footer {
 .send-email {
   grid-column-start: 2;
   color: #4C4E50; }
+  .send-email input {
+    background: rgba(255, 255, 255, 0.137);
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border: none; }
+    .send-email input:focus {
+      -webkit-transform: scaleX(2);
+              transform: scaleX(2);
+      -webkit-transform: scaleZ(2);
+              transform: scaleZ(2);
+      -webkit-transform: scaleY(8);
+              transform: scaleY(8);
+      -webkit-transition: 1s ease-in-out;
+      transition: 1s ease-in-out; }
 
 body {
   margin: 0px; }
@@ -69,3 +84,76 @@ a {
   src: url("../fonts/RiseofKingdom.eot?#iefix") format("embedded-opentype"), url("../fonts/RiseofKingdom.woff2") format("woff2"), url("../fonts/RiseofKingdom.woff") format("woff"), url("../fonts/RiseofKingdom.ttf") format("truetype"), url("../fonts/RiseofKingdom.svg#RiseofKingdom") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+.home-content {
+  background-color: #1b1a18;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%231455ba' fill-opacity='0.82' fill-rule='evenodd'/%3E%3C/svg%3E");
+  height: 1000px; }
+
+.nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+          box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 1.125rem; }
+
+.nav-item {
+  color: #83818c;
+  padding: 20px;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  position: relative; }
+  .nav-item:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s; }
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0; }
+
+.nav-item:not(.is-active):hover {
+  color: #333; }
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0; }
+
+@media (max-width: 580px) {
+  .nav {
+    overflow: auto; } }
+
+.test {
+  background-color: red;
+  height: 100px;
+  width: 200px; }

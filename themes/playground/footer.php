@@ -24,8 +24,8 @@
 			<p class="copyright"> © 2019 Michael Dunk.</p>
 </div>	
 <div class="send-email">	
-  Send Me an Email: <input type="text">
-  <input type="submit" value="Submit">
+  <p class="send-email-text">Send Me an Email: </p><input class="input-box" type="text">
+  <button type="button">click here asshole</button>
 </div>
 					
 		<a class="fab fa-linkedin-in" href="https://github.com/mikedd96"></a>

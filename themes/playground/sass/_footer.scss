@@ -38,4 +38,20 @@ footer {
 .send-email {
     grid-column-start: 2;
     color: #4C4E50;
+    
+    input {
+        background: rgba(255, 255, 255, 0.137);
+        border-radius: 3px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        // filter: blur(2px);
+        border: none;
+        &:focus {
+            // border-radius: 15px;
+            transform: scaleX(2);
+            transform: scaleZ(2);
+            transform: scaleY(8);
+            transition: 1s ease-in-out;
+
+        }
+    }
 }
