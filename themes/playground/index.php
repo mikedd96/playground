@@ -19,7 +19,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 			<div class="home-content">
+			
 			<nav class="nav">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
   <a href="#" class="nav-item is-active" active-color="orange">Home</a>
   <a href="#" class="nav-item" active-color="green">About</a>
   <a href="#" class="nav-item" active-color="blue">Testimonials</a>
@@ -34,6 +36,7 @@ get_header(); ?>
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	<script type="text/javascript" src="jquery-1.8.1-min.js"></script>
 <?php
 get_footer();
+

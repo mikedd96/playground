@@ -9,11 +9,14 @@ function handleIndicator(el) {
   
   indicator.style.width = `${el.offsetWidth}px`;
   indicator.style.left = `${el.offsetLeft}px`;
-  indicator.style.backgroundColor = el.getAttribute('active-color');
+  indicator.style.backgroundColor = el.getAttribute('color');
 
   el.classList.add('is-active');
   el.style.color = el.getAttribute('active-color');
 }
+$('.nav-item').click(function(){
+   $(this).toggleClass('.active');
+});
 
 
 items.forEach((item, index) => {
