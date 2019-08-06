@@ -38,19 +38,11 @@ gulp.task('lint', function() {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task(
-  'scripts',
-  gulp.series('lint', function() {
-    return gulp
-      .src('./js/*.js')
-      .pipe(terser())
-      .pipe(
-        rename({
-          extname: '.min.js'
-        })
-      )
-      .pipe(gulp.dest('./js'));
-  })
+gulp.task( 'scripts', gulp.series('lint', () => 
+  gulp.src('./js/*.js')
+  .pipe(terser())
+  .pipe(rename({ extname: '.min.js' }) 
+  .pipe(gulp.dest('./dist/js'))))
 );
 
 // Set-up BrowserSync and watch
